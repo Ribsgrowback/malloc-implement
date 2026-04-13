@@ -57,12 +57,12 @@ team_t team = {
 #define DSIZE       8
 /* Default heap growth chunk (4KB). */
 #define CHUNKSIZE   (1 << 12)
-/* Header + footer bytes per block. */
-#define OVERHEAD    (2 * WSIZE)
-/* Required payload alignment. */
-#define ALIGNMENT   8
-/* Native pointer size used in free-list payload links. */
-#define PTRSIZE     ((size_t)sizeof(void *))
+    /* Header + footer bytes per block. */
+    #define OVERHEAD    (2 * WSIZE)
+    /* Required payload alignment. */
+    #define ALIGNMENT   8
+    /* Native pointer size used in free-list payload links. */
+    #define PTRSIZE     ((size_t)sizeof(void *))
 
 /* Simple max helper. */
 #define MAX(x, y) ((x) > (y) ? (x) : (y))
